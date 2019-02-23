@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CureAnywhere Send Prescription</title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.24.min.js"></script>
+
+    <link rel="stylesheet" href="v10031/css/main.css">
+    <script type="text/javascript" src="v10031/js/capture.js"></script>
+    <script type="text/javascript" src="v10031/js/upload.js"></script>
+    <script type="text/javascript" src="v10031/js/bowser.js"></script>
+    <script type="text/javascript" src="v10031/js/utils.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="version" content="v10031" />
+</head>
+<body onload="OnPageLoad()">
+    <div>
+        <video id="video" class="video-region" autoplay>
+            Your browser does not support HTML5 video.
+        </video>
+        <canvas id="canvas"> </canvas>
+        <p id="centerText">	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />Please provide access to your camera, This permission is valid only for this session and you will be asked everytime you visit this page.</p>
+        <div class="overlayarea" align="right">
+
+            <table style="min-width=100%">
+                <tr>
+                    <td>
+
+                        <div id="results"><br /><i>Take photo of prescription and send to patient</i></div>
+                        <input id="hiddenFilePicker" type="file" accept="image/*" style="display:none" />
+
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="capture" class="overlaybutton" onClick="Capture()">Capture Photo</button>
+                    </td>
+                    <td>
+                        <button id="SendToPatient" class="overlaybutton" onClick="UploadToS3()">Send to Patient</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <input type="checkbox" id="UpLoadExisting" onclick="UploadExistingFile()">
+                            I already have a photo to send  .
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+    <script>
+        ShowCameraFeed();
+    </script>
+</body>
+</html>

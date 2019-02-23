@@ -1,785 +1,560 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->	<html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-     <title>Cure Any Where | Banglore </title>	
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/prettyPhoto.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="css/color.css">
-	<link rel="stylesheet" href="css/responsive.css">
-	<link rel="stylesheet" href="css/transitions.css">
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cure Any Where | Banglore </title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/color.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body class="th-home">
-	<!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
-	<!--************************************
-			Wrapper Start
-	*************************************-->
-	<div id="th-wrapper" class="th-wrapper th-haslayout">
-		<!--************************************
-				Header Start
-		*************************************-->
-		<header id="th-header" class="th-header th-haslayout">
-			<div class="th-topbar">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-xs-12">
-							<strong class="th-logo">
-								<a href="index.html"><img src="images/logo.png" alt="cure anywhere"></a>
-							</strong>
-							<div class="th-rightarea hideinfo">
-								<div class="th-topinfo">
-									<ul class="th-emails">
-										<li><a href="mailto:kesri.technologies@gmail.com">Email us</a></li>
-										<li><i class="fa fa-life-ring"></i><a href="contact.html">Help Desk</a></li>
-									</ul>
-									<ul class="th-socialicons">
-										<li><a href="https://www.facebook.com/CureAnywhere-1937851843206502/"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="https://twitter.com/cureanywhere"><i class="fa fa-twitter"></i></a></li>
-									</ul>
-								</div>
-								<ul class="th-addressbox">
-									<li>
-										<span class="th-addressicon"><i class="fa fa-clock-o"></i></span>
-										<div class="th-addresscontent">
-											<strong>Banglore - India</strong>
-											<span>Reach Us</span>
-										</div>
-									</li>
-									<li>
-										<span class="th-addressicon"><i class="fa fa-phone"></i></span>
-										<div class="th-addresscontent">
-											<strong>(+91) 9632922822</strong>
-											<span>Contact Us</span>
-										</div>
-									</li>
-									<li>
-										<a class="th-btnappointment" href="javascript:void(0);" data-toggle="modal" data-target="#myModal">
-											<i class="fa fa-bell-o"></i>
-											<em>Appointment</em>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="th-navigationarea">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<nav id="th-nav" class="th-nav">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#th-navigation" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-								<div id="th-navigation" class="collapse navbar-collapse th-navigation">
-									<ul>
-										<li><a href="index.html"> Home</a></li>
-										<li><a href="aboutus.html"> About Us</a></li>
-										<li><a href="howitworks.html"> How it Works</a></li>
-										<!--<li><a href="treatments.html"> treatments</a></li> -->
-										<li><a href="privacy.html"> Privacy</a></li>
-										<li><a href="contact.html"> Contact Us</a></li>
-									</ul>
-								</div>
-							</nav>
-							<div class="th-widgetsearch">
-								<form action="#" method="post">
-									<fieldset>
-										<input  style="visibility:hidden;" name="search" class="form-control" >
-									</fieldset>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!--************************************
-				Header End
-		*************************************-->	
-		<!--************************************
-				Home Slider Start
-		*************************************-->
-		<div id="th-homeslider" class="th-homeslider th-haslayout">
-			<figure class="item">
-				<img src="images/slider/img-01.jpg" alt="image description">
-				<figcaption>
-					<div class="container">
-						<div class="th-slidercontent">
-							<h1>Cure <span> Anywhere</span></h1>
-							<div class="th-description">
-								<p>Quality and Affordable Care at Your Place, at Your Time !</p>
-							</div>
-						<div class="th-btns">
-								<a class="th-btn" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" style="color:#fff;">Appointment</a>
-							</div>
-						</div>
-					</div>
-				</figcaption>
-			</figure>
-			<figure class="item">
-				<img src="images/slider/img-02.jpg" alt="image description">
-				<figcaption>
-					<div class="container">
-						<div class="th-slidercontent">
-							<h1>Cure <span> Anywhere</span></h1>
-							<div class="th-description">
-								<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-							</div>
-						<div class="th-btns">
-								<a class="th-btn" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" style="color:#fff;">Appointment</a>
-							</div>
-						</div>
-					</div>
-				</figcaption>
-			</figure>
-			<figure class="item">
-				<img src="images/slider/img-03.jpg" alt="image description">
-				<figcaption>
-					<div class="container">
-						<div class="th-slidercontent">
-							<h1>Cure <span> Anywhere</span></h1>
-							<div class="th-description">
-								<p>Quality and Affordable Care at Your Place, at Your Time !</p>
-							</div>
-						<div class="th-btns">
-								<a class="th-btn" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" style="color:#fff;">Appointment</a>
-							</div>
-						</div>
-					</div>
-				</figcaption>
-			</figure>
-		</div>
-		<!--************************************
-				Home Slider End
-		*************************************-->
-		<!--************************************
-				Main Start
-		*************************************-->
-		<main id="th-main" class="th-main th-haslayout">
-			<!--************************************
-					Features And Table Start
-			*************************************-->
-			<section class="th-sectionspace th-haslayout th-pattrenone">
-				<div class="container">
-					<div class="row">
-						<div class="th-featuresandtime">
-						
-								<div class="col-md-12 col-sm-12 col-xs-12">
-									<div class="th-sectionhead th-alignleft th-nopattren">
-										<div class="th-sectiontitle">
-											<h2>We Give You <span>the Best</span></h2>
-										</div>
-										<div class="th-description">
-											<p>Get the Best Online Consultation anywhere always Simply find the doctor that suit your needs anytime & anywhere, Over 1000 Specialists.</p>
-										</div>
-									</div>
-								</div>
-							<div class="col-md-6 col-sm-12 col-xs-12">
-								<div class="th-features">
-									<div class="row">
-										<div class="col-sm-12 col-xs-12">
-											<div class="th-feature">
-												<div class="th-featurehead">
-													<span class="th-featureicon"><i class="fa fa-user-md"></i></span>
-													<div class="th-featuretitle">
-														<h3><a href="#" style="color:#0071bd;">CHOOSE A DOCTOR</a></h3>
-													</div>
-												</div>
-												<div class="th-description">
-													<p>Get the Best Online Consultation anywhere always Simply find the doctor that suit your needs anytime & anywhere, Over 1000 Specialists.</p>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="th-feature">
-												<div class="th-featurehead">
-													<span class="th-featureicon"><i class="fa fa-calendar"></i></span>
-													<div class="th-featuretitle">
-														<h3><a href="#"  style="color:#0071bd;">BOOK AN APPOINMENT</a></h3>
-													</div>
-												</div>
-												<div class="th-description">
-													<p>Book at appoint at an available slot convenient to you. No need for any registrations, only your mobile and email is needed for appointment confirmation. You will be asked to pay for the service before confirming the appointment via our secure payments channel.</p>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-12 col-xs-12">
-											<div class="th-feature">
-												<div class="th-featurehead">
-													<span class="th-featureicon"><i class="fa fa-envelope-o"></i></span>
-													<div class="th-featuretitle">
-														<h3><a href="#"  style="color:#0071bd;">CONFIRMATION MESSAGE</a></h3>
-													</div>
-												</div>
-												<div class="th-description">
-													<p>You will receive a confirmation message and a reminder SMS 5 mins before the call. Just click on the link in the SMS and your video call is started with your doctor. </p>
-													<p style="color:#0071bd;">Note: A high speed Internet or at least 4G is recommended for best experience.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-								<div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
-									<div class="container">
-									  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-										<!-- Indicators -->
-										<ol class="carousel-indicators">
-										  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-										  <li data-target="#myCarousel" data-slide-to="1"></li>
-										  <li data-target="#myCarousel" data-slide-to="2"></li>
-										</ol>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!--************************************
+            Wrapper Start
+    *************************************-->
+    <div id="th-wrapper" class="th-wrapper th-haslayout">
+        <!--************************************
+                Header Start
+        *************************************-->
+        <header id="th-header" class="th-header th-haslayout">
+            <div class="th-topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <strong class="th-logo">
+                                <a href="index.html"><img src="images/logo.png" alt="cure anywhere"></a>
+                            </strong>
+                            <div class="th-rightarea hideinfo">
+                                <div class="th-topinfo">
+                                    <ul class="th-emails">
+                                        <li><a href="mailto:support@cureanywhere.com">Email us</a></li>
+                                        <li><i class="fa fa-life-ring"></i><a href="contact.html">Help Desk</a></li>
+                                    </ul>
+                                    <ul class="th-socialicons">
+                                        <li><a href="https://www.facebook.com/CureAnywhere-1937851843206502/"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/cureanywhere"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
+                                <ul class="th-addressbox">
+                                    <li>
+                                        <span class="th-addressicon"><i class="fa fa-clock-o"></i></span>
+                                        <div class="th-addresscontent">
+                                            <strong>Banglore - India</strong>
+                                            <span>Reach Us</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="th-addressicon"><i class="fa fa-phone"></i></span>
+                                        <div class="th-addresscontent">
+                                            <strong>(+91) 8762648817</strong>
+                                            <span>Contact Us</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a class="th-btnappointment" href="https://booking.kesritechnologies.com/v2/#book">
+                                            <i class="fa fa-bell-o"></i>
+                                            <em>Appointment</em>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="th-navigationarea">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <nav id="th-nav" class="th-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#th-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div id="th-navigation" class="collapse navbar-collapse th-navigation">
+                                    <ul>
+                                        <li><a href="index.html"> Home</a></li>
+                                        <li><a href="aboutus.html"> About Us</a></li>
+                                        <li><a href="howitworks.html"> How it Works</a></li>
+                                        <!--<li><a href="treatments.html"> treatments</a></li> -->
+                                        <li><a href="privacy.html"> Privacy and ToS</a></li>
+                                        <li><a href="contact.html"> Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="th-widgetsearch">
+                                <form action="#" method="post">
+                                    <fieldset>
+                                        <input style="visibility:hidden;" name="search" class="form-control">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--************************************
+                Header End
+        *************************************-->
+        <!--************************************
+                Home Slider Start
+        *************************************-->
+        <div id="th-homeslider" class="th-homeslider th-haslayout">
+            <figure class="item">
+                <img src="images/slider/img-01.jpg" alt="image description">
+                <figcaption>
+                    <div class="container">
 
-										<!-- Wrapper for slides -->
-										<div class="carousel-inner">
-										  <div class="item active">
-											<img src="images/w1.png" alt="Cure Anywhere" >
-										  </div>
+                        <div class="th-slidercontent">
+                            <div>
+                                <h1>CureAnywhere</h1>
+                                <div class="th-description">
+                                    <p>Quality and affordable care at your place, at your time !</p>
+                                    <p>Click on APPOINTMENT to see the list of available doctors</p>
+                                </div>
+                                <div class="th-btns">
+                                    <a class="th-btn" href="https://booking.kesritechnologies.com/v2/#book">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="images/slider/img-02.jpg" alt="image description">
+                <figcaption>
+                    <div class="container">
+                        <div class="th-slidercontent">
+                            <h1>CureAnywhere</h1>
+                            <div class="th-description">
+                                <p>Easy to use Video Consultation by trusted doctors and therapists</p>
+                                <p>Click on APPOINTMENT to see the list of available doctors</p>
+                            </div>
+                            <div class="th-btns">
+                                <a class="th-btn" href="https://booking.kesritechnologies.com/v2/#book">Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="item">
+                <img src="images/slider/img-03.jpg" alt="image description">
+                <figcaption>
+                    <div class="container">
+                        <div class="th-slidercontent">
+                            <h1>CureAnywhere</h1>
+                            <div class="th-description">
+                                <p>Absolutely no downloads required, works on any device !</p>
+                                <p>Click on APPOINTMENT to see the list of available doctors</p>
+                            </div>
+                            <div class="th-btns">
+                                <a class="th-btn" href="https://booking.kesritechnologies.com/v2/#book">Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <!--************************************
+                Home Slider End
+        *************************************-->
+        <!--************************************
+                Main Start
+        *************************************-->
+        <main id="th-main" class="th-main th-haslayout">
+            <!--************************************
+                    Features And Table Start
+            *************************************-->
+            <section class="th-sectionspace th-haslayout th-pattrenone">
+                <div class="container">
+                    <div class="row">
+                        <div class="th-featuresandtime">
 
-										  <div class="item">
-											<img src="images/w2.png" alt="Cure Anywhere" >
-										  </div>
-										
-										  <div class="item">
-											<img src="images/w3.png" alt="Cure Anywhere">
-										  </div>
-										</div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="th-sectionhead th-alignleft th-nopattren">
+                                    <div class="th-sectiontitle">
+                                        <h2>We Give You <span>the Best</span></h2>
+                                    </div>
+                                    <div class="th-description">
+                                        <p>Get the Best Online Consultation anywhere always Simply find the doctor that suit your needs anytime & anywhere.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="th-features">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-xs-12">
+                                            <div class="th-feature">
+                                                <div class="th-featurehead">
+                                                    <span class="th-featureicon"><i class="fa fa-user-md"></i></span>
+                                                    <div class="th-featuretitle">
+                                                        <h3><a href="#" style="color:#0071bd;">CHOOSE A DOCTOR</a></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="th-description">
+                                                    <p>Get the Best Online Consultation anywhere always Simply find the doctor that suit your needs anytime & anywhere, Over 1000 Specialists.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <div class="th-feature">
+                                                <div class="th-featurehead">
+                                                    <span class="th-featureicon"><i class="fa fa-calendar"></i></span>
+                                                    <div class="th-featuretitle">
+                                                        <h3><a href="#" style="color:#0071bd;">BOOK AN APPOINMENT</a></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="th-description">
+                                                    <p>Book at appoint at an available slot convenient to you. No need for any registrations, only your mobile and email is needed for appointment confirmation. You will be asked to pay for the service before confirming the appointment via our secure payments channel.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-xs-12">
+                                            <div class="th-feature">
+                                                <div class="th-featurehead">
+                                                    <span class="th-featureicon"><i class="fa fa-envelope-o"></i></span>
+                                                    <div class="th-featuretitle">
+                                                        <h3><a href="#" style="color:#0071bd;">CONFIRMATION MESSAGE</a></h3>
+                                                    </div>
+                                                </div>
+                                                <div class="th-description">
+                                                    <p>You will receive a confirmation SMS upon booking and a reminder SMS 15 mins before the call. Just click on the link in the SMS and your video call is started with your doctor. </p>
+                                                    <p style="color:#0071bd;">Note: A high speed Internet or at least 4G is recommended for best experience.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+                                <div class="container">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="images/w1.png" alt="Cure Anywhere">
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/w2.png" alt="Cure Anywhere">
+                                            </div>
 
-									  </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--************************************
-					Features And Table End
-			*************************************-->
-			<!--************************************
-					Statistics Start
-			*************************************
-			<section class="th-haslayout th-parallaximg" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/bgparallax/bgparallax-01.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="th-counters">
-							<div class="th-counter">
-								<span class="th-countericon">
-									<i class="fa fa-trophy"></i>
-								</span>
-								<div class="th-counterbox">
-									<div class="th-countertitle">
-										<h2>Years of Experience</h2>
-									</div>
-									<div class="th-count">
-										<h3 data-from="0" data-to="5" data-speed="8000" data-refresh-interval="50">5</h3>
-									</div>
-								</div>
-							</div>
-							<div class="th-counter">
-								<span class="th-countericon">
-									<i class="fa fa-stethoscope"></i>
-								</span>
-								<div class="th-counterbox">
-									<div class="th-countertitle">
-										<h2>Number of Doctors</h2>
-									</div>
-									<div class="th-count">
-										<h3 data-from="0" data-to="50" data-speed="8000" data-refresh-interval="50">50</h3>
-									</div>
-								</div>
-							</div>
-							<div class="th-counter">
-								<span class="th-countericon">
-									<i class="fa fa-video-camera"></i>
-								</span>
-								<div class="th-counterbox">
-									<div class="th-countertitle">
-										<h2>Video <br> Sessions</h2>
-									</div>
-									<div class="th-count">
-										<h3 data-from="0" data-to="330" data-speed="8000" data-refresh-interval="50">330</h3>
-									</div>
-								</div>
-							</div>
-							<div class="th-counter">
-								<span class="th-countericon">
-									<i class="fa fa-group"></i>
-								</span>
-								<div class="th-counterbox">
-									<div class="th-countertitle">
-										<h2>Our Happy Clients</h2>
-									</div>
-									<div class="th-count">
-										<h3 data-from="0" data-to="150" data-speed="8000" data-refresh-interval="50">150</h3>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			************************************
-					Statistics end
-			*************************************-->
+                                            <div class="item">
+                                                <img src="images/w3.png" alt="Cure Anywhere">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <!--************************************
+            Features And Table End
+    *************************************-->
+    <!--************************************
+            Statistics Start
+    *************************************
+    <section class="th-haslayout th-parallaximg" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/bgparallax/bgparallax-01.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="th-counters">
+                    <div class="th-counter">
+                        <span class="th-countericon">
+                            <i class="fa fa-trophy"></i>
+                        </span>
+                        <div class="th-counterbox">
+                            <div class="th-countertitle">
+                                <h2>Years of Experience</h2>
+                            </div>
+                            <div class="th-count">
+                                <h3 data-from="0" data-to="5" data-speed="8000" data-refresh-interval="50">5</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th-counter">
+                        <span class="th-countericon">
+                            <i class="fa fa-stethoscope"></i>
+                        </span>
+                        <div class="th-counterbox">
+                            <div class="th-countertitle">
+                                <h2>Number of Doctors</h2>
+                            </div>
+                            <div class="th-count">
+                                <h3 data-from="0" data-to="50" data-speed="8000" data-refresh-interval="50">50</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th-counter">
+                        <span class="th-countericon">
+                            <i class="fa fa-video-camera"></i>
+                        </span>
+                        <div class="th-counterbox">
+                            <div class="th-countertitle">
+                                <h2>Video <br> Sessions</h2>
+                            </div>
+                            <div class="th-count">
+                                <h3 data-from="0" data-to="330" data-speed="8000" data-refresh-interval="50">330</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="th-counter">
+                        <span class="th-countericon">
+                            <i class="fa fa-group"></i>
+                        </span>
+                        <div class="th-counterbox">
+                            <div class="th-countertitle">
+                                <h2>Our Happy Clients</h2>
+                            </div>
+                            <div class="th-count">
+                                <h3 data-from="0" data-to="150" data-speed="8000" data-refresh-interval="50">150</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    ************************************
+            Statistics end
+    *************************************-->
+    <!--************************************
+            Testimonials Start
+    *************************************-->
+    <!-- <section class="th-sectionspace th-haslayout th-parallaximg th-darkoverlay" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/bgparallax/bgparallax-02.jpg"> -->
 
-			<!--************************************
-					Newsletter Start
-			*************************************-->
-			<section class="th-haslayout th-bgdark th-positionrelative">
-				<div class="container">
-					<div class="row">
-						<div class="th-newsletter">
-							<div class="col-md-6 col-sm-12 col-xs-12">
+    <section class="th-sectionspace th-haslayout th-parallaximg th-darkoverlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-xs-12">
+                    <div class="th-testimonials">
+                        <div class="th-sectionhead">
+                            <div class="th-sectiontitle">
+                                <h2>Words of <span>Satisfaction</span></h2>
+                            </div>
+                        </div>
+                        <div id="th-testimonialslider" class="th-testimonialslider">
+                            <div class="item">
+                                <div class="th-testimonial">
+                                    <div class="th-clientinfo">
+                                        <h3>Venugopal</h3>
+                                        <span>Diabetic Stage1</span>
+                                    </div>
+                                    <blockquote>
+                                        <q>I always vist my trusted doctor, with CureAnywhere my revisits has been made much easy, without travelling in traffic for hours</q>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="th-testimonial">
+                                    <div class="th-clientinfo">
+                                        <h3>Namboodari</h3>
+                                        <span>Slip disc patient</span>
+                                    </div>
+                                    <blockquote>
+                                        <q>My experience with CureAnywhere has been a breeze. With no App or downloads or registrations, even my parents started using it!</q>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="th-testimonial">
+                                    <div class="th-clientinfo">
+                                        <h3>Savitha K</h3>
+                                        <span>Techie</span>
+                                    </div>
+                                    <blockquote>
+                                        <q>True to its word CureAnywhere replaces physical interactions with online, without complicated forms or registrations</q>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--************************************
+            Testimonials End
+    *************************************-->
+    </main>
+    <!--************************************
+            Main End
+    *************************************-->
+    <!--************************************
+            Footer Start
+    *************************************-->
+    <footer id="th-footer" class="th-footer th-haslayout">
+        <div class="th-footermiddlebox th-sectionspace th-haslayout th-parallaximg" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/bgparallax/bgparallax-03.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="th-fcols">
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="th-fcol">
+                                <strong class="th-logo">
+                                    <a href="#">
+                                        <img src="images/logo.png" alt="image description">
+                                    </a>
+                                </strong>
+                                <div class="th-description">
+                                    <p>Cure anywhere is an initiative by Kesri Technologies to bring affordable Consultations of qualified doctors at the comfort of your homes.</p>
+                                    <ul class="th-socialicons th-socialiconsround">
+                                        <li><a href="https://www.facebook.com/CureAnywhere-1937851843206502/"><i class="fa fa-facebook-f"></i></a></li>
+                                        <li><a href="https://twitter.com/cureanywhere"><i class="fa fa-twitter"></i></a></li>
+                                    </ul>
+                                </div>
 
-							</div>
-							<div class="col-md-6 col-sm-12 col-xs-12">
-								<div class="th-newsletterbox">
-									<h2>Subscribe <span>Newsletter</span></h2>
-									<div class="th-description">
-										<p>Subscribe a Newsletter to Follow us to get the latest updates,</p>
-									</div>
-									<form class="th-formnewsletter">
-										<fieldset>
-											<input type="email" name="email" class="form-control" placeholder="Enter Your E-mail Address">
-											<button type="submit">Subscribe</button>
-										</fieldset>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--************************************
-					Newsletter End
-			*************************************-->
-			
-			<!--************************************
-					Doctor Team Start
-			*************************************-->
-			<section class="th-sectionspace th-haslayout th-paddingtopzero" style="margin-top:40px;">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-xs-12">
-							<div class="th-sectionhead th-alignleft">
-								<div class="th-sectiontitle">
-									<h2>Our Talented <span>Doctor’s Team</span></h2>
-								</div>
-							</div>
-						</div>
-						<div id="th-docteamslider" class="th-docteamslider th-docmembers">
-							<div class="item">
-								<div class="th-docmember">
-									<figure>
-										<img src="images/docteam/img-01.jpg" alt="image description">
-										<figcaption>
-											<div class="th-doctitle">
-												<h3><a href="#">Dr. Doctor Name</a></h3>
-											</div>
-											<span class="th-docpost">MBBS, BMBS, MBChB</span>
-											<ul class="th-socialicons">
-												<li><a href="https://www.facebook.com/CureAnywhere-1937851843206502/"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="https://twitter.com/cureanywhere"><i class="fa fa-twitter"></i></a></li>
-											</ul>
-											<div class="th-description">
-												<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-											</div>
-											<a class="th-docemail" href="#"><i class="fa fa-envelope-o"></i></a>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-							<div class="item">
-								<div class="th-docmember">
-									<figure>
-										<img src="images/docteam/img-02.jpg" alt="image description">
-										<figcaption>
-											<div class="th-doctitle">
-												<h3><a href="#">Dr. Doctor Name</a></h3>
-											</div>
-											<span class="th-docpost">MBBS, BMBS, MBChB</span>
-											<div class="th-doclinks">
-												<ul class="th-socialicons">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="th-description">
-												<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-											</div>
-											<a class="th-docemail" href="#"><i class="fa fa-envelope-o"></i></a>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-							<div class="item">
-								<div class="th-docmember">
-									<figure>
-										<img src="images/docteam/img-03.jpg" alt="image description">
-										<figcaption>
-											<div class="th-doctitle">
-												<h3><a href="#">Dr. Doctor Name</a></h3>
-											</div>
-											<span class="th-docpost">MBBS, BMBS, MBChB</span>
-											<div class="th-doclinks">
-												<ul class="th-socialicons">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="th-description">
-												<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-											</div>
-											<a class="th-docemail" href="#"><i class="fa fa-envelope-o"></i></a>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-							<div class="item">
-								<div class="th-docmember">
-									<figure>
-										<img src="images/docteam/img-04.jpg" alt="image description">
-										<figcaption>
-											<div class="th-doctitle">
-												<h3><a href="#">Dr. Doctor Name</a></h3>
-											</div>
-											<span class="th-docpost">MBBS, BMBS, MBChB</span>
-											<div class="th-doclinks">
-												<ul class="th-socialicons">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="th-description">
-												<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-											</div>
-											<a class="th-docemail" href="#"><i class="fa fa-envelope-o"></i></a>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-							<div class="item">
-								<div class="th-docmember">
-									<figure>
-										<img src="images/docteam/img-01.jpg" alt="image description">
-										<figcaption>
-											<div class="th-doctitle">
-												<h3><a href="#">Dr. Doctor Name</a></h3>
-											</div>
-											<span class="th-docpost">MBBS, BMBS, MBChB</span>
-											<div class="th-doclinks">
-												<ul class="th-socialicons">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="th-description">
-												<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-											</div>
-											<a class="th-docemail" href="#"><i class="fa fa-envelope-o"></i></a>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-							<div class="item">
-								<div class="th-docmember">
-									<figure>
-										<img src="images/docteam/img-02.jpg" alt="image description">
-										<figcaption>
-											<div class="th-doctitle">
-												<h3><a href="#">Dr. Doctor Name</a></h3>
-											</div>
-											<span class="th-docpost">MBBS, BMBS, MBChB</span>
-											<div class="th-doclinks">
-												<ul class="th-socialicons">
-													<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-													<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-													<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-													<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-												</ul>
-											</div>
-											<div class="th-description">
-												<p>Get the Best Online Video Consultation by World Class, Trusted Doctors.</p>
-											</div>
-											<a class="th-docemail" href="#"><i class="fa fa-envelope-o"></i></a>
-										</figcaption>
-									</figure>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--************************************
-					Doctor Team End
-			*************************************-->
-			<!--************************************
-					Testimonials Start
-			*************************************-->
-			<!-- <section class="th-sectionspace th-haslayout th-parallaximg th-darkoverlay" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/bgparallax/bgparallax-02.jpg"> -->
-			
-			<section class="th-sectionspace th-haslayout th-parallaximg th-darkoverlay">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-xs-12">
-							<div class="th-testimonials">
-								<div class="th-sectionhead">
-									<div class="th-sectiontitle">
-										<h2>Words of <span>Satisfaction</span></h2>
-									</div>
-								</div>
-								<div id="th-testimonialslider" class="th-testimonialslider">
-									<div class="item">
-										<div class="th-testimonial">
-											<div class="th-clientinfo">
-												<h3>Client Name</h3>
-												<span>Heart Stroke Survivor</span>
-											</div>
-											<blockquote>
-												<q>I was there for my medical examination. From setting up appointment, registration, consultation and check up process, all staff and physician you met were....</q>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="th-testimonial">
-											<div class="th-clientinfo">
-												<h3>Client Name</h3>
-												<span>Brain Stroke Survivor</span>
-											</div>
-											<blockquote>
-												<q>I was there for my medical examination. From setting up appointment, registration, consultation and check up process, all staff and physician you met were....</q>
-											</blockquote>
-										</div>
-									</div>
-									<div class="item">
-										<div class="th-testimonial">
-											<div class="th-clientinfo">
-												<h3>Client Name</h3>
-												<span>Heart Stroke Survivor</span>
-											</div>
-											<blockquote>
-												<q>I was there for my medical examination. From setting up appointment, registration, consultation and check up process, all staff and physician you met were....</q>
-											</blockquote>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--************************************
-					Testimonials End
-			*************************************-->
-			
-		</main>
-		<!--************************************
-				Main End
-		*************************************-->
-		<!--************************************
-				Footer Start
-		*************************************-->
-		<footer id="th-footer" class="th-footer th-haslayout">
-			<div class="th-footertopbar">
-				<div class="container">
-					<div class="row">
-						<ul class="th-fservices">
-							<li>
-								<span class="th-fserviceicon"><i class="fa fa-user-md"></i></span>
-								<div class="th-contentbox">
-									<strong>Qualified <span>Doctors</span></strong>
-								</div>
-							</li>
-							<li>
-								<span class="th-fserviceicon"><i class="fa fa-calendar"></i></span>
-								<div class="th-contentbox">
-									<strong>Book an<span>Appointment</span></strong>
-								</div>
-							</li>
-							<li>
-								<span class="th-fserviceicon"><i class="fa fa-envelope-o"></i></span>
-								<div class="th-contentbox">
-									<strong>Confirmation <span>Message</span></strong>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="th-footermiddlebox th-sectionspace th-haslayout th-parallaximg" data-appear-top-offset="600" data-parallax="scroll" data-image-src="images/bgparallax/bgparallax-03.jpg">
-				<div class="container">
-					<div class="row">
-						<div class="th-fcols">
-							<div class="col-md-4 col-sm-6 col-xs-6">
-								<div class="th-fcol">
-									<strong class="th-logo">
-										<a href="#">
-											<img src="images/logo.png" alt="image description">
-										</a>
-									</strong>
-									<div class="th-description">
-										<p>Cure anywhere is an initiative by Kesri Technologies to bring affordable Consultations of qualified doctors at the comfort of your homes.</p>
-										<ul class="th-socialicons th-socialiconsround">
-											<li><a href="https://www.facebook.com/CureAnywhere-1937851843206502/"><i class="fa fa-facebook-f"></i></a></li>
-											<li><a href="https://twitter.com/cureanywhere"><i class="fa fa-twitter"></i></a></li>
-										</ul>
-									</div>
-									
-								</div>
-							</div>
-							
-							<div class="col-md-4 col-sm-6 col-xs-6">
-								<div class="th-fcol">
-									<div class="th-borderheading">
-										<h3>Contact Us</h3>
-									</div>
-									<ul class="th-faddressinfo">
-										<li>
-											<span class="th-addressicon"><img src="images/icon/img-08.png" alt="image description"></span>
-											<address>#676, 1st floor,  Akshaya,  22nd Main HSR Layout, Sector - 2, Bangalore 560102</address>
-										</li>
-										<li>
-											<span class="th-addressicon"><img src="images/icon/img-09.png" alt="image description"></span>
-											<div class="th-phone">
-												<span>(+91) 9632922822,</span>
-											</div>
-										</li>
-										<li>
-											<span class="th-addressicon"><img src="images/icon/img-10.png" alt="image description"></span>
-											<div class="th-phone">
-												<span><a href="mailto:kesri.technologies@gmail.com">Email us</a></span>
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-6 col-xs-6">
-								<div class="th-fcol">
-									<div class="th-borderheading">
-										<h3>Useful Links</h3>
-									</div>
-									<ul class="th-usefullinks">
-										<li><a href="index.html">Home</a></li>
-										<li><a href="aboutus.html">About Us</a></li>
-										<li><a href="howitworks.html">How it Works</a></li>
-										<li><a href="privacy.html">Privacy</a></li>
-										<li><a href="contact.html">Contact Us</a></li>
-									</ul>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 col-xs-12">
-							<div class="th-footerbottombar">
-							<span class="th-copyright">&copy; Copyrights 2017. Cure Anywhere All Rights Reserved</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                            </div>
+                        </div>
 
-		</footer>
-		<!--************************************
-				Footer End
-		*************************************-->
-	</div>
-	<!--************************************
-			Wrapper End
-	*************************************-->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="th-appointment-modal">
-					<div class="th-appointmentcounters">
-						<div class="th-formhead">
-							<i><img src="images/icon/img-25.png" alt="image description"></i>
-							<h3>Book your Appointment<span>Quality service at your place at your time !</span></h3>
-						</div>
-						<form class="th-formappointment">
-							<fieldset>
-								<div class="form-group">
-									<input type="text" name="Enter your name" class="form-control" placeholder="Name">
-								</div>
-								<div class="form-group">
-									<input type="email" name="Email" class="form-control" placeholder="E-mail">
-								</div>
-								<div class="form-group">
-									<input type="text" name="Your phone number" class="form-control" placeholder="Phone Number">
-								</div>
-								<div class="form-group">
-									<span class="th-select">
-										<select>
-											<option>Gender</option>
-											<option>Male</option>
-											<option>Female</option>
-										</select>
-									</span>
-								</div>
-								<div class="form-group">
-									<div class="th-dateinputicon">
-										<i class="fa fa-calendar"></i>
-										<input type="text" name="date" class="form-control th-datetimepicker" placeholder="Date or time to visit">
-									</div>
-								</div>
-								<button class="th-btnform th-btnform-lg" type="submit">submit request</button>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="th-fcol">
+                                <div class="th-borderheading">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <ul class="th-faddressinfo">
+                                    <li>
+                                        <span class="th-addressicon"><img src="images/icon/img-08.png" alt="image description"></span>
+                                        <address>#676, 1st floor,  Akshaya,  22nd Main HSR Layout, Sector - 2, Bangalore 560102</address>
+                                    </li>
+                                    <li>
+                                        <span class="th-addressicon"><img src="images/icon/img-09.png" alt="image description"></span>
+                                        <div class="th-phone">
+                                            <span>(+91) 8762648817</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="th-addressicon"><img src="images/icon/img-10.png" alt="image description"></span>
+                                        <div class="th-phone">
+                                            <span><a href="mailto:support@cureanywhere.com">Email us</a></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-xs-6">
+                            <div class="th-fcol">
+                                <div class="th-borderheading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul class="th-usefullinks">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="aboutus.html">About Us</a></li>
+                                    <li><a href="howitworks.html">How it Works</a></li>
+                                    <li><a href="privacy.html">Privacy and ToS</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
 
-	<script src="js/vendor/jquery-library.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/moment-with-locales.js"></script>
-	<script src="js/bootstrap-datetimepicker.min.js"></script>
-	<script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/finalcountdown.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/prettyPhoto.js"></script>
-	<script src="js/appear.js"></script>
-	<script src="js/gmap3.js"></script>
-	<script src="js/themefunction.js"></script>
-	
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="th-footerbottombar">
+                            <span class="th-copyright">&copy; Copyrights 2018. Cure Anywhere All Rights Reserved. Version:v10010</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--************************************
+            Footer End
+    *************************************-->
+    </div>
+    <!--************************************
+            Wrapper End
+    *************************************-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="th-appointment-modal">
+                    <div class="th-appointmentcounters">
+                        <div class="th-formhead">
+                            <i><img src="images/icon/img-25.png" alt="image description"></i>
+                            <h3>Book your Appointment<span>Quality service at your place at your time !</span></h3>
+                        </div>
+                        <form class="th-formappointment">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input type="text" name="Enter your name" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="Email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="Your phone number" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="form-group">
+                                    <span class="th-select">
+                                        <select>
+                                            <option>Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </span>
+                                </div>
+                                <div class="form-group">
+                                    <div class="th-dateinputicon">
+                                        <i class="fa fa-calendar"></i>
+                                        <input type="text" name="date" class="form-control th-datetimepicker" placeholder="Date or time to visit">
+                                    </div>
+                                </div>
+                                <button class="th-btnform th-btnform-lg" type="submit">submit request</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/jquery-library.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&amp;language=en"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/finalcountdown.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/isotope.pkgd.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/prettyPhoto.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/gmap3.js"></script>
+    <script src="js/themefunction.js"></script>
+
 </body>
-
 </html>
