@@ -6,11 +6,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
-    <link rel="stylesheet" href="v10031/css/main.css">
-    <script type="text/javascript" src="v10031/js/bowser.js"></script>
-    <script type="text/javascript" src="v10031/js/utils.js"></script>
-    <script type="text/javascript" src="v10031/js/videocall.js"></script>
-    <meta name="version" content="v10031" />
+    <link rel="stylesheet" href="v10032/css/main.css">
+    <script type="text/javascript" src="v10032/js/bowser.js"></script>
+    <script type="text/javascript" src="v10032/js/utils.js"></script>
+    <script type="text/javascript" src="v10032/js/videocall.js"></script>
+    <meta name="version" content="v10032" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -24,7 +24,7 @@
         <div class="modal-content">
             <span class="closeX">&times;</span>
             <p id="InfoMessage"></p>
-            <button id="closeBtn" class="closebtn">OK, got it !</button>
+            <button id="closeBtn" class="closebtn">Loading please wait.</button>
         </div>
 
     </div>
@@ -40,7 +40,7 @@
 
         </tr>
         <tr>
-            <button id="SendPrescription" class="SendPrescriptionArea" onClick="SendPrescription()">Send Prescription</button>
+            <button id="SendPrescription" class="SendPrescriptionArea" onClick="SendPrescription()">Send photo</button>
             </div>
         </tr>
     </table>
@@ -60,18 +60,7 @@
     </table>
     <!-- The Gruveo embed's <iframe> will replace this <div> tag. -->
 
-    <script>
-
-        if (checkWebRTCSupport()) {
-            if (CheckParams()) {
-             if (CheckDateValidity()) {
-                GruveoInit();
-                DisplayUserInfo();
-                EnableSendPrescription();
-               }
-            }
-        }
-    </script>
+    <script>OnVideoCall()</script>
 
 </body>
 </html>
