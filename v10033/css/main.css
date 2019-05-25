@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+.booth {
+    /*width: 400px;*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #ccc;
+    border: 10px solid #ddd;
+    margin: 0 auto;
+}
+
+.booth-capture-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+}
+
+.overlaybutton {
+    display: none;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #566573;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    right: 20px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+#unsupportedbrowsermsg {
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    margin: 20px;
+    text-align: left-side;
+}
+
+#setDefaultBrowsermsg {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    text-align: left-side;
+    height: auto;
+    display: block;
+}
+
+#capture:hover {
+    background: #ddd;
+    color: black;
+}
+
+#SendToPatient:hover {
+    background: #ddd;
+    color: black;
+}
+
+#Close:hover {
+    background: #ddd;
+    color: black;
+}
+
+#SendPrescription:hover {
+    background: #ddd;
+    color: black;
+}
+
+.video-region {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.video-regionnew {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    ;
+}
+
+.video-region1 {
+    position: fixed;
+    width: 150px;
+    border: solid 1px #e1e1e1;
+    vertical-align: middle;
+    background: #ffdab9;
+    text-align: center;
+    bottom: 10px;
+    left: 10px;
+}
+
+.img11 {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text123 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+.MainVideoRegion {
+    display: none;
+    width: 110w; /* 90% of viewport vidth */
+    height: 50.625vw; /* ratio = 9/16 * 90 = 50.625 */
+    max-height: 50vh;
+    max-width: 160vh; /* 16/9 * 90 = 160 */
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#BkgdImage {
+    width: 75vw; /* 90% of viewport vidth */
+    height: 90.625vw; /* ratio = 9/16 * 90 = 50.625 */
+    max-height: 100vh;
+    max-width: 180vh; /* 16/9 * 90 = 160 */
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+}
+
+.aspect-ratio-box {
+    height: 100%;
+    overflow: hidden;
+    padding-top: 591.44px / 1127.34px * 100%;
+    background: white;
+    position: relative;
+}
+
+.aspect-ratio-box-inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.flexbox-centering {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewport-sizing {
+    font-size: 5vw;
+}
+
+.container {
+    width: 100px;
+}
+
+.visibleDiv {
+    left: 10px;
+    bottom: 10px;
+}
+
+.overlayarea {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    float: right;
+}
+
+.SendPrescriptionArea {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100px;
+    padding: 15px;
+    float: right;
+    margin: 20px;
+    border-radius: 60%;
+}
+
+.helpmsgarea {
+    position: fixed;
+    bottom: 0;
+    padding: -2px;
+    float: left;
+    padding-top: 5px
+}
+
+.existingfilearea {
+    position: fixed;
+    right: 0;
+    float: right;
+}
+/*
+#screenshot {
+ 	position: fixed;
+    display: none;
+	right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;  
+	width:300;
+	height:400;
+}
+*/
+#centerText {
+    // vertical-align: middle;
+    text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    border: 2px solid #888;
+    width: 80%;
+    margin-top: 100px; /* Location of the box */
+}
+
+/* The Close X */
+.closeX {
+    color: solid #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: none;
+}
+
+    .closeX:hover,
+    .closeX:focus {
+        color: solid #888;
+        text-decoration: none;
+        cursor: pointer;
+    }
+/* The Close Button */
+.closebtn {
+    font-weight: bold;
+    padding: 10px;
+}
+
+    .closebtn:hover,
+    .closebtn:focus {
+        cursor: pointer;
+    }
