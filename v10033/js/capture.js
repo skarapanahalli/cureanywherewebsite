@@ -187,7 +187,7 @@ function handleImage(e) {
             img.src = event.target.result;
         }
         else {
-            img.src = '/images/icon/file.png';
+            img.src = '/images/file.png';
         }
         resizeToFit();
         var capturebtn = document.getElementById('capture');
