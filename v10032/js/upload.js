@@ -3,8 +3,7 @@ function UploadToS3() {
     document.body.style.cursor = 'wait';
 
     AWS.config.update({
-        accessKeyId: 'AKIAJQKLK2HLNIL4E6AQ',
-        secretAccessKey: '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'
+
     });
     AWS.config.region = 'us-east-1';
 
@@ -25,7 +24,11 @@ function UploadToS3() {
         console.log(bkc);
 
         var d = new Date();
-        var filename = d.toISOString().replace(/:/g, "-") + '_' + bkc + '.jpg';
+        var ext = "jpg";
+        if (selectedFile instanceof File) { //else it is an image not selected file
+            ext = selectedFile.slice((selectedFile.lastIndexOf(".") - 1 >>> 0) + 2);
+        }
+        var filename = d.toISOString().replace(/:/g, "-") + '_' + bkc + '.' + ext;
 
         var params = { Key: filename, ContentType: 'image/jpeg', Body: selectedFile, Metadata: { 'DoctorName': doctorname, 'Email': mail, 'bkc': bkc } };
         bucket.upload(params, function (err, data) {
