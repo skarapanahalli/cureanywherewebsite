@@ -3,16 +3,16 @@ function UploadToS3() {
     document.body.style.cursor = 'wait';
 
     AWS.config.update({
-
+        credentials: new AWS.CognitoIdentityCredentials({
+            IdentityPoolId: 'us-east-1:215df856-be93-48d8-9171-e1c2aa088002'
+        }),
+        region: 'us-east-1'
     });
-    AWS.config.region = 'us-east-1';
 
     var bucket = new AWS.S3({ params: { Bucket: 'prescriptionarchive' } });
 
-    //var fileChooser = document.getElementById('file-chooser');
     var results = document.getElementById('results');
 
-    //var file = fileChooser.files[0]; 
     if (selectedFile) {
         results.innerHTML = '</br>Uploading the photo, please wait...';
 
@@ -24,11 +24,7 @@ function UploadToS3() {
         console.log(bkc);
 
         var d = new Date();
-        var ext = "jpg";
-        if (selectedFile instanceof File) { //else it is an image not selected file
-            ext = selectedFile.slice((selectedFile.lastIndexOf(".") - 1 >>> 0) + 2);
-        }
-        var filename = d.toISOString().replace(/:/g, "-") + '_' + bkc + '.' + ext;
+        var filename = d.toISOString().replace(/:/g, "-") + '_' + bkc + '.jpg';
 
         var params = { Key: filename, ContentType: 'image/jpeg', Body: selectedFile, Metadata: { 'DoctorName': doctorname, 'Email': mail, 'bkc': bkc } };
         bucket.upload(params, function (err, data) {
